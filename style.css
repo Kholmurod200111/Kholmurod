@@ -195,6 +195,7 @@ margin-left: 1%;
     
 
 .footer{
+    padding: 0 10px;
     margin:  0 auto;
     background-color:#f5e7ff  ;
     max-width: 1000px;
@@ -206,9 +207,11 @@ font-family: 'Times New Roman', Times, serif;
 .foot{
     margin-bottom: 30px;
 }  
-.foot-pi{
-    color:  #000000;
-} 
+ .foot-pi {
+    text-align: start;
+    font-size: 1.8rem;
+    color: #000000;
+}
 .foot-text{
     font-weight: bold;
     padding-top: 20px;
