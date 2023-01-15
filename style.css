@@ -1,266 +1,215 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    font-family: roboto;
-background-size: 100%;
-}
 
+.text-container {
 
-.header{
-height: 100vh;
-    background-image: url(./img/121d139bf9ff3b8e916475f9c0a3d0ec.jpg);
-
- background-repeat: no-repeat;
-margin: 0 2%;
-background-size: cover;
-}
-
-.text{
-    width: 110px;
-     position: relative;
-    padding-top: 5%;
-    padding-left: 5%;
-font-size: 60px;
-color: rgb(244, 243, 242);
-
-}
-.div{
-    display: flex;
-flex-direction: column;
-    padding-left: 6%;
-    padding-top: 4%;
-    position: absolute;
-}
-
-.text2{
-    font-family: 'lora', sans-serif;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 2px;
-    width: 150px;
-    position: relative;
+    text-align: center;
+    font-size: 16px; /* base font size */
+  }
+  a{
+    text-decoration: none;
+  }
+  body{
+    background-color: rgb(255, 202, 89);
   
-font-size:45px;
-color: rgb(244, 243, 242); 
-}
+  }
+/* Base font size */
+.text-container {
 
-.btn{
-margin-top: 30px;
-          padding: 15px 25px;
-        border-radius: 10px;
-    
-        font-size: 16px;
-        background: #17c2a2;
-        text-align: center;
-        text-decoration: none;
-    height: 48px;
-     box-shadow: #17c2a2 ;
-    
-    width: 280px;
+    font-family: 'Orelega One', cursive;
 
-}
-body{
-    background-color:#0c0c0c ;
-}
-.btn:hover {
-
-
-        text-decoration: none;
-      }
-      a{
-        color: #000000;
-        text-decoration: none;
-      }
-
- 
- 
-
-.section{
+    font-size: 80px;
+  }
   
-    margin: 0 auto; 
-}
+  /* Responsive styles */
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .text-container {
+      font-size: 40px; /* smaller font size */
+    }
 
-.elements{
-width: 100%;
+    .responsive-button {
+        padding: 20px 88px;
+       font-size: 14px;
+       
+     }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .text-container {
+      font-size: 38px; /* base font size */
+    }
+    .responsive-button {
+        padding: 20px 100px;
+      font-size: 16px;
+
+
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .text-container {
+      font-size: 40px; /* larger font size */
+    }
+    .responsive-button {
+        padding: 20px 140px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .text-container {
+      font-size: 50px; /* even larger font size */
+    }
+    .responsive-button {
+        padding: 20px 140px;
+      font-size: 20px;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .text-container {
+      font-size: 60px; /* even larger font size */
+    }
+    .responsive-button {
+        padding: 20px 140px;
+     font-size: 22px;
+   }
+  }
+
+/* Base styles */
+.responsive-button {
+ width: 100%;
+    font-size: 2rem;
+    background: #17c2a2;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+
+/* Base styles */
+.responsive-image {
+    max-width: 100%;
+    padding-top: 30px;
+height: max-content;
+
+    /* scale the image to fit its container */
+  }
+  
+  /* Responsive styles */
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .responsive-image {
+      width: 100%; /* smaller image on smaller screens */
+    }
+    .elements {
+        display: flex;
+     flex-wrap: wrap;
+      
+    }
+
+    .element1, .element2 , .element3{
+        width: 100%;
+    }
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .responsive-image {
+      width: 100%; /* base image size */
+    }
+
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .responsive-image {
+      width: 110%; /* larger image on larger screens */
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .responsive-image {
+      width: 120%; /* even larger image */
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .responsive-image {
+      width: 130%; /* even larger image */
+    }
+  }
+  
+.elem-pi , .elem-text{
+    font-family: 'Roboto', sans-serif;
+ 
+   
+    font-size: 26px;
+    font-weight: bold;
+  
+}
+.elements {
     display: flex;
 
+  width: 100%;
 }
+
 .element1, .element2 , .element3{
 width: 100%;
     display: flex;
-    flex-direction: column;
-    background-color: rgb(231, 230, 230);
-    padding: 50px 20px;
-    margin-left: 1%;
-    border-radius: 15px;
-    letter-spacing: 0.2px;
-}
-.btn1{
-margin: 5% 37%;
-}
-.section img{
- margin: 0 60px;
-    width: 65px;
-    height: 65px;
-}
-.text3{
-    padding-top: 25px;
-font-size: 45px;
-margin-bottom: 20px;
-    color: #d5ffff;
-}
-.elem-text{
-
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    padding-top: 20px;
-    font-size: 26px;
-    font-weight: bold;
-    padding-bottom: 25px;
-}
-.elem-pi{
-    font-family: 'Roboto', sans-serif;
-
-    margin: 0 auto;
-    font-size:16px ;
-    font-weight: bolder;
-}
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
- .text2{
-    width: auto;
-    font-size: 15px;
-  }
-  .div{
-    margin-top: 70%;
-  }
-  .text3{
-    font-size: 30px;
-   padding: 15px 15px 0 15px ;
-  }
-  .elements{
-    flex-wrap: wrap;
-  }
-  .element1, .element2,.element3{
-    margin: 2%;
-  }
-  .btn1{
-    margin: 6%;
-  }
-
-
-  .header{
-    background-size: 100%;
-  }
-
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .text2{
-        width: auto;
-        font-size: 15px;
-      }
-      .div{
-        margin-top: 70%;
-      }
-      .text3{
-        font-size: 30px;
-       padding: 15px 15px 0 15px ;
-      }
-      .elements{
-        flex-wrap: wrap;
-      }
-      .element1, .element2,.element3{
-        margin: 2%;
-      }
-      .btn1{
-        margin: 6%;
-      }
-    
-    
-      .header{
-        background-size: 100%;
-      }
+margin-left: 1%;
+    margin-bottom: 2%;
+        flex-direction: column;
+        background-color: rgb(182, 217, 232);
+        padding: 50px 20px;
  
-      .section{
-        padding-top: 20%
-      }
-}
-
-
-
-@media only screen and (min-device-width : 1024px) and (max-device-width : 2560px){
-    .header{
-        margin: 0;
-        padding: 0 10px;
-    }
-    .div {
-        padding-left: 1%;
-        padding-top: 5%;
-        position: absolute;
-    }
-    .text2{
-        font-size: 35px;
-    }
-}
-
-
-
-@media only screen and (min-device-width : 480px) and (max-device-width : 768px){
-    .text2{
-        width: auto;
-        font-size: 18px;
-      }
-.btn , .btn1{
-    margin: 8% 25%;
-}
-    .section{padding-top: 15%;}
-    .section img {
-        margin: 0 40%;
-        width: 65px;
-        height: 65px;
-    }
-
-
-      .div{
-        padding: 10%; 
-        margin-top: 60%;
-      }
-      .text3{
-        font-size: 30px;
-       padding: 15px 15px 0 15px ;
-      }
-      .elements{
-        flex-wrap: wrap;
-      }
-      .element1, .element2,.element3{
-        margin: 2%;
-      }
+        border-radius: 10px;
    
+    }
+
+.elem-img {
+    margin-left: auto;
+    margin-right: auto;
+           width: 65px;
+           height: 65px;
+           margin-bottom: 2%;
+       }
+
     
-      .header{
-        background-size: 100%;
-      }
-   
+
+.footer{
+    margin:  0 auto;
+    background-color:#9DA1AA ;
+    max-width: 1000px;
+    font-size: 35px;
+    border-radius: 1%;
+font-family: 'Times New Roman', Times, serif;
+ 
+}  
+.foot{
+    margin-bottom: 30px;
+}  
+.foot-pi{
+    color:  #000000;
+} 
+.foot-text{
+    font-weight: bold;
+    padding-top: 20px;
 }
 
 
 
+details[open] > summary {
+    color:rgb(255, 255, 255); 
+    background-color:rgb(73, 128, 175);
 
-
-
-
-
-
+    cursor: pointer;
+        list-style: none; 
+}
