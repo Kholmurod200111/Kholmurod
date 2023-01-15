@@ -28,7 +28,7 @@
     }
 
     .responsive-button {
-        padding: 20px 88px;
+        padding: 20px 25px;
        font-size: 14px;
        
      }
@@ -40,7 +40,7 @@
       font-size: 38px; /* base font size */
     }
     .responsive-button {
-          padding: 20px 25px;
+          padding: 20px 100px;
       font-size: 16px;
 
 
